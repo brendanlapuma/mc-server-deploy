@@ -33,7 +33,7 @@ export MC_READY_PATTERN LOG_FILE LOG_START_LINE
 if ! timeout "$MC_STARTUP_TIMEOUT" bash -c '
   while IFS= read -r line; do
     printf "%s\n" "$line"
-    if [[ "$line" == *"$MC_READY_PATTERN"* ]]; then
+    if [[ "$line" =~ $MC_READY_PATTERN ]]; then
       exit 0
     fi
   done < <(tail -n +"$LOG_START_LINE" -F "$LOG_FILE")

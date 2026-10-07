@@ -22,7 +22,7 @@ env:
   MC_VM_PORT: "22"
   MC_SERVER_DIR: "minecraft-server"
   MC_TMUX_SESSION: "minecraft"
-  MC_READY_PATTERN: "<LOG PATTERN HERE>"
+  MC_READY_PATTERN: 'Done \([0-9]+(\.[0-9]+)?s\)! For help, type "help"'
   MC_SHUTDOWN_TIMEOUT: "60"
   MC_STARTUP_TIMEOUT: "300"
   MC_RAM: ${{ inputs.ram || '4G' }}
