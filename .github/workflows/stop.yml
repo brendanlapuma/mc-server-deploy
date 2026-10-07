@@ -3,7 +3,8 @@ name: Stop Minecraft server
 on:
   workflow_dispatch:
 
-permissions: {}
+permissions:
+  contents: read
 
 env:
   MC_VM_PORT: "22"
