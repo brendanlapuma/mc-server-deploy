@@ -1,9 +1,6 @@
 name: Deploy Minecraft server
 
 on:
-  push:
-    branches:
-      - main
   workflow_dispatch:
     inputs:
       ram:

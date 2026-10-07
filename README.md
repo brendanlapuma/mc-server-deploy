@@ -7,8 +7,7 @@ files for the server you actually want to run.
 
 The reusable deployment system is contained in `.github/`:
 
-- `.github/workflows/deploy.yml` deploys on pushes to `main` and on manual
-  workflow dispatch.
+- `.github/workflows/deploy.yml` deploys on manual workflow dispatch.
 - `.github/workflows/stop.yml` provides a separate manual stop action.
 - `.github/scripts/` contains the shared stop and start/readiness
   scripts.
@@ -60,14 +59,15 @@ Detach without stopping the server with `Ctrl-b`, then `d`.
 
 ## VM setup
 
-The VM should be a Linux instance with a user that can run the server. Prepare
-it once with commands run directly on the VM.
+After creating the VM, use its SSH terminal to install the small set of
+dependencies required by this deployment.
 
-Install Java compatible with your Minecraft server, `tmux`, and GNU `timeout`:
+Install `tmux` and GNU `timeout`:
 
 ```bash
 sudo apt-get update
 sudo apt-get install -y coreutils tmux
+sudo apt-get install -y openjdk-21-jre-headless
 ```
 
 Verify the prerequisites:
@@ -78,9 +78,18 @@ tmux -V
 timeout --version
 ```
 
-The first deployment automatically creates or updates the server files in the
-SSH user's `~/minecraft-server` directory. No repository checkout or manual
-server-directory setup is required on the VM.
+Use the same SSH key pair for your own VM access and the deployment pipeline.
+Add the key's public half to the `MC_VM_USER` account's
+`~/.ssh/authorized_keys`, then store the private half in the repository's
+`MC_VM_SSH_KEY` secret. The user must also be able to write to its home
+directory, where the workflow creates `~/minecraft-server`.
+
+```bash
+mkdir -p ~/.ssh
+chmod 700 ~/.ssh
+chmod 600 ~/.ssh/authorized_keys
+```
+
 
 ## GitHub repository configuration
 
@@ -92,8 +101,7 @@ Add these repository **secrets**:
 | `MC_VM_USER` | Linux user that owns and runs the server |
 | `MC_VM_SSH_KEY` | Private SSH key for that user |
 
-Pushes to `main` use `4G` of RAM. Manual deployment runs can choose from the
-workflow's **Run workflow** menu.
+Manual deployment runs can choose from the workflow's **Run workflow** menu.
 
 The VM port (`22`), server directory (`~/minecraft-server`), and tmux session
 (`minecraft`) are internal deployment settings. Change them in both workflows
@@ -101,7 +109,7 @@ only if your VM layout requires different values.
 
 ## Workflow behavior
 
-On a deployment, the workflow:
+When manually run, the deployment workflow:
 
 1. Checks out the repository.
 2. Uploads the repository contents to the VM.
