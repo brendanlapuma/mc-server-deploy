@@ -40,16 +40,7 @@ jobs:
           MC_VM_USER: ${{ secrets.MC_VM_USER }}
           MC_VM_SSH_KEY: ${{ secrets.MC_VM_SSH_KEY }}
         run: |
-          set -euo pipefail
-          mkdir -p "$HOME/.ssh"
-          chmod 700 "$HOME/.ssh"
-          printf '%s\n' "$MC_VM_SSH_KEY" > "$HOME/.ssh/minecraft_deploy"
-          chmod 600 "$HOME/.ssh/minecraft_deploy"
-          ssh-keyscan -p "$MC_VM_PORT" "$MC_VM_HOST" >> "$HOME/.ssh/known_hosts"
-          {
-            echo "MC_VM_HOST=$MC_VM_HOST"
-            echo "MC_VM_USER=$MC_VM_USER"
-          } >> "$GITHUB_ENV"
+          bash .github/scripts/configure-ssh.sh
 
       - name: Upload repository
         run: |
