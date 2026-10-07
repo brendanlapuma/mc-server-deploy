@@ -78,28 +78,44 @@ tmux -V
 timeout --version
 ```
 
-Use the same SSH key pair for your own VM access and the deployment pipeline.
-Add the key's public half to the `MC_VM_USER` account's
-`~/.ssh/authorized_keys`, then store the private half in the repository's
-`MC_VM_SSH_KEY` secret. The user must also be able to write to its home
-directory, where the workflow creates `~/minecraft-server`.
+The Google Cloud SSH button does not provide a private key that GitHub Actions
+can use. Generate a deployment key inside the VM's Google Cloud SSH terminal:
+
+```bash
+ssh-keygen -t ed25519 -f ~/.ssh/minecraft-deploy -C "minecraft-deploy"
+```
+
+When prompted for a passphrase, leave it empty so GitHub Actions can use the
+key non-interactively. Add the generated public key to the VM user's
+authorized keys:
 
 ```bash
 mkdir -p ~/.ssh
 chmod 700 ~/.ssh
+cat ~/.ssh/minecraft-deploy.pub >> ~/.ssh/authorized_keys
 chmod 600 ~/.ssh/authorized_keys
 ```
+
+Display the generated private key in the VM terminal:
+
+```bash
+cat ~/.ssh/minecraft-deploy
+```
+
+Copy the complete output into the repository secret `MC_VM_SSH_KEY`. This key
+is for GitHub Actions; your existing Google Cloud SSH access remains separate.
 
 
 ## GitHub repository configuration
 
 Add these repository **secrets**:
 
-| Secret | Description |
-| --- | --- |
-| `MC_VM_HOST` | VM IP address or DNS name |
-| `MC_VM_USER` | Linux user that owns and runs the server |
-| `MC_VM_SSH_KEY` | Private SSH key for that user |
+- `MC_VM_HOST`: In Google Cloud Console, open **Compute Engine → VM
+  instances** and copy the VM's **External IP**.
+- `MC_VM_USER`: In the VM's Google Cloud SSH terminal, run `whoami` and use
+  the output.
+- `MC_VM_SSH_KEY`: Use the complete private key printed from
+  `~/.ssh/minecraft-deploy` in the previous step.
 
 Manual deployment runs can choose from the workflow's **Run workflow** menu.
 
