@@ -6,8 +6,13 @@ on:
 permissions:
   contents: read
 
+concurrency:
+  group: minecraft-server
+  cancel-in-progress: false
+
 env:
   MC_VM_PORT: "22"
+  MC_SERVER_DIR: "minecraft-server"
   MC_TMUX_SESSION: "minecraft"
   MC_SHUTDOWN_TIMEOUT: "60"
 
@@ -27,13 +32,4 @@ jobs:
           bash .github/scripts/configure-ssh.sh
 
       - name: Stop server
-        env:
-          MC_VM_HOST: ${{ secrets.MC_VM_HOST }}
-          MC_VM_USER: ${{ secrets.MC_VM_USER }}
-        run: |
-          set -euo pipefail
-          export MC_TMUX_SESSION MC_SHUTDOWN_TIMEOUT
-          ssh -i "$HOME/.ssh/minecraft_deploy" -p "$MC_VM_PORT" \
-            "$MC_VM_USER@$MC_VM_HOST" \
-            "MC_TMUX_SESSION=$(printf '%q' "$MC_TMUX_SESSION") MC_SHUTDOWN_TIMEOUT=$(printf '%q' "$MC_SHUTDOWN_TIMEOUT") bash -s" \
-            < .github/scripts/stop-server.sh
+        run: bash .github/scripts/stop-server.sh

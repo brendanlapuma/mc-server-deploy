@@ -9,6 +9,8 @@ The reusable deployment system is contained in `.github/`:
 
 - `.github/workflows/deploy.yml` deploys on manual workflow dispatch.
 - `.github/workflows/stop.yml` provides a separate manual stop action.
+- `.github/workflows/backup.yml` copies server state from the VM into a pull
+  request.
 - `.github/scripts/` contains the shared stop and start/readiness
   scripts.
 
@@ -31,18 +33,18 @@ The deployment expects these files at the repository root:
 The provided example is a NeoForge server. Its `run.sh` uses NeoForge's
 generated `unix_args.txt`, and its `user_jvm_args.txt` contains JVM options.
 Other server distributions are supported if they provide the same two-file
-interface, or if `.github/scripts/start-server.sh` is adjusted to match their
+interface, or if `.github/scripts/start-server-on-vm.sh` is adjusted to match their
 launcher.
 
 If your server uses a different startup command, argument file, or argument
-format, modify `.github/scripts/start-server.sh`. If it does not use
+format, modify `.github/scripts/start-server-on-vm.sh`. If it does not use
 `user_jvm_args.txt`, remove or replace the RAM-editing logic there and keep the
 final command that starts your server in the tmux session.
 
 ## Runtime model
 
 The server runs in one named `minecraft` tmux session on the VM. GitHub Actions
-uses `.github/scripts/stop-server.sh` to send the Minecraft `stop` command,
+uses `.github/scripts/stop-server-on-vm.sh` to send the Minecraft `stop` command,
 waits for it to exit, and force-terminates the session after 60 seconds if
 necessary. The deployment then starts the new server in the same detached
 session and waits for its readiness log message. The action exits while the
@@ -142,11 +144,21 @@ When manually run, the deployment workflow:
 1. Checks out the repository.
 2. Uploads the repository contents to the VM.
 3. Runs `.github/scripts/stop-server.sh`.
-4. Runs `.github/scripts/start-server.sh`.
-5. Streams startup output into the Actions log until `MC_READY_PATTERN` appears.
+4. Deletes the existing VM server directory contents.
+5. Runs `.github/scripts/run-server.sh`.
+6. Streams startup output into the Actions log until `MC_READY_PATTERN` appears.
+
+This makes the repository the source of truth. Files deleted from the repository
+are also deleted from the VM on deployment.
 
 To stop the server without deploying, open **Stop Minecraft server** under the
 repository's **Actions** tab and select **Run workflow**.
+
+To back up changes made while playing, run **Back up Minecraft server**. It
+stops the server, copies the VM state into a branch, opens a pull request
+against `main`, and starts the server again. Logs and `.github/` are excluded
+from the backup. Merge the pull request before deploying if you want to
+preserve the backed-up state.
 
 Do not commit private keys, operator credentials, or other secrets. World data,
 logs, libraries, mods, and configuration files are intentionally treated as

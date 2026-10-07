@@ -1,0 +1,99 @@
+name: Back up Minecraft server
+
+on:
+  workflow_dispatch:
+    inputs:
+      ram:
+        description: Maximum RAM allocated to Minecraft after the backup
+        required: true
+        default: 4G
+        type: choice
+        options:
+          - 2G
+          - 4G
+          - 6G
+          - 8G
+          - 16G
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: minecraft-server
+  cancel-in-progress: false
+
+env:
+  MC_VM_PORT: "22"
+  MC_SERVER_DIR: "minecraft-server"
+  MC_TMUX_SESSION: "minecraft"
+  MC_READY_PATTERN: 'Done \([0-9]+(\.[0-9]+)?s\)! For help, type "help"'
+  MC_SHUTDOWN_TIMEOUT: "60"
+  MC_STARTUP_TIMEOUT: "300"
+  MC_RAM: ${{ inputs.ram || '4G' }}
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - name: Configure SSH
+        env:
+          MC_VM_HOST: ${{ secrets.MC_VM_HOST }}
+          MC_VM_USER: ${{ secrets.MC_VM_USER }}
+          MC_VM_SSH_KEY: ${{ secrets.MC_VM_SSH_KEY }}
+        run: bash .github/scripts/configure-ssh.sh
+
+      - name: Stop server
+        id: stop
+        env:
+          MC_VM_HOST: ${{ secrets.MC_VM_HOST }}
+          MC_VM_USER: ${{ secrets.MC_VM_USER }}
+        run: bash .github/scripts/stop-server.sh
+
+      - name: Pull server files
+        if: steps.stop.outcome == 'success'
+        env:
+          MC_VM_HOST: ${{ secrets.MC_VM_HOST }}
+          MC_VM_USER: ${{ secrets.MC_VM_USER }}
+        run: |
+          set -euo pipefail
+          find . -mindepth 1 -maxdepth 1 ! -name .git ! -name .github -exec rm -rf -- {} +
+          ssh -i "$HOME/.ssh/minecraft_deploy" -p "$MC_VM_PORT" \
+            "$MC_VM_USER@$MC_VM_HOST" \
+            "tar --exclude=.github --exclude=logs --exclude=server.log -C \"\$HOME/$MC_SERVER_DIR\" -cf - ." |
+            tar -xf - -C .
+
+      - name: Create backup pull request
+        if: steps.stop.outcome == 'success'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          if git diff --quiet && git diff --cached --quiet && [[ -z "$(git ls-files --others --exclude-standard)" ]]; then
+            echo "No server changes to back up"
+            exit 0
+          fi
+          branch="backup/${GITHUB_RUN_ID}"
+          git switch -c "$branch"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Backup Minecraft server state"
+          git push --set-upstream origin "$branch"
+          gh pr create \
+            --base main \
+            --head "$branch" \
+            --title "Backup Minecraft server state" \
+            --body "Automated backup of the Minecraft server state from the VM."
+
+      - name: Start server and wait for readiness
+        if: always() && steps.stop.outcome == 'success'
+        env:
+          MC_VM_HOST: ${{ secrets.MC_VM_HOST }}
+          MC_VM_USER: ${{ secrets.MC_VM_USER }}
+        run: bash .github/scripts/run-server.sh

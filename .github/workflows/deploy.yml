@@ -18,6 +18,10 @@ on:
 permissions:
   contents: read
 
+concurrency:
+  group: minecraft-server
+  cancel-in-progress: false
+
 env:
   MC_VM_PORT: "22"
   MC_SERVER_DIR: "minecraft-server"
@@ -26,6 +30,7 @@ env:
   MC_SHUTDOWN_TIMEOUT: "60"
   MC_STARTUP_TIMEOUT: "300"
   MC_RAM: ${{ inputs.ram || '4G' }}
+  MC_STAGING_ARCHIVE: ".minecraft-deploy.tar"
 
 jobs:
   deploy:
@@ -45,30 +50,25 @@ jobs:
       - name: Upload repository
         run: |
           set -euo pipefail
-          printf -v remote_dir '%q' "$MC_SERVER_DIR"
+          printf -v staging_archive '%q' "$MC_STAGING_ARCHIVE"
           git archive --format=tar "$GITHUB_SHA" |
             ssh -i "$HOME/.ssh/minecraft_deploy" -p "$MC_VM_PORT" "$MC_VM_USER@$MC_VM_HOST" \
-              "mkdir -p \$HOME/$remote_dir && tar -xf - -C \$HOME/$remote_dir"
+              "cat > \$HOME/$staging_archive"
 
       - name: Stop server
+        run: bash .github/scripts/stop-server.sh
+
+      - name: Replace server files
         run: |
           set -euo pipefail
-          quote() { printf '%q' "$1"; }
-          remote_command="MC_TMUX_SESSION=$(quote "$MC_TMUX_SESSION")"
-          remote_command+=" MC_SHUTDOWN_TIMEOUT=$(quote "$MC_SHUTDOWN_TIMEOUT")"
-          remote_command+=" bash \"\$HOME/$(quote "$MC_SERVER_DIR")/.github/scripts/stop-server.sh\""
+          remote_command="server_dir=\"\$HOME/$(printf '%q' "$MC_SERVER_DIR")\""
+          remote_command+=" staging_archive=\"\$HOME/$(printf '%q' "$MC_STAGING_ARCHIVE")\""
+          remote_command+=' mkdir -p "$server_dir"'
+          remote_command+=' find "$server_dir" -mindepth 1 -maxdepth 1 -exec rm -rf -- {} +'
+          remote_command+=' tar -xf "$staging_archive" -C "$server_dir"'
+          remote_command+=' rm -f "$staging_archive"'
           ssh -i "$HOME/.ssh/minecraft_deploy" -p "$MC_VM_PORT" \
             "$MC_VM_USER@$MC_VM_HOST" "$remote_command"
 
       - name: Start server and wait for readiness
-        run: |
-          set -euo pipefail
-          quote() { printf '%q' "$1"; }
-          remote_command="MC_SERVER_DIR=\"\$HOME/$(quote "$MC_SERVER_DIR")\""
-          remote_command+=" MC_TMUX_SESSION=$(quote "$MC_TMUX_SESSION")"
-          remote_command+=" MC_RAM=$(quote "$MC_RAM")"
-          remote_command+=" MC_READY_PATTERN=$(quote "$MC_READY_PATTERN")"
-          remote_command+=" MC_STARTUP_TIMEOUT=$(quote "$MC_STARTUP_TIMEOUT")"
-          remote_command+=" bash \"\$HOME/$(quote "$MC_SERVER_DIR")/.github/scripts/start-server.sh\""
-          ssh -i "$HOME/.ssh/minecraft_deploy" -p "$MC_VM_PORT" \
-            "$MC_VM_USER@$MC_VM_HOST" "$remote_command"
+        run: bash .github/scripts/run-server.sh
