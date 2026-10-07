@@ -23,7 +23,7 @@ printf '%s\n' "-Xmx${MC_RAM}" >> "$temporary_args_file"
 mv "$temporary_args_file" "$JVM_ARGS_FILE"
 
 touch "$LOG_FILE"
-log_start_line=$(( $(wc -l < "$LOG_FILE") + 1 ))
+LOG_START_LINE=$(( $(wc -l < "$LOG_FILE") + 1 ))
 
 echo "Starting Minecraft server"
 tmux new-session -d -s "$MC_TMUX_SESSION" \
