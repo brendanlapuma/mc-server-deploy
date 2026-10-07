@@ -51,11 +51,23 @@ server continues running.
 To administer the server interactively:
 
 ```bash
-ssh minecraft@VM_HOST
+tmux ls
 tmux attach -t minecraft
 ```
 
-Detach without stopping the server with `Ctrl-b`, then `d`.
+From the attached Minecraft console, gracefully stop the server with:
+
+```text
+stop
+```
+
+To force-quit the tmux session from another SSH terminal:
+
+```bash
+tmux kill-session -t minecraft
+```
+
+To detach from tmux without stopping the server, press `Ctrl-b`, then `d`.
 
 ## VM setup
 
