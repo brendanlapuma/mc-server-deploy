@@ -1,0 +1,86 @@
+name: Deploy Minecraft server
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+    inputs:
+      ram:
+        description: Maximum RAM allocated to Minecraft
+        required: true
+        default: 4G
+        type: choice
+        options:
+          - 2G
+          - 4G
+          - 6G
+          - 8G
+          - 16G
+
+permissions:
+  contents: read
+
+env:
+  MC_VM_PORT: "22"
+  MC_SERVER_DIR: "/srv/minecraft"
+  MC_TMUX_SESSION: "minecraft"
+  MC_READY_PATTERN: "<LOG PATTERN HERE>"
+  MC_SHUTDOWN_TIMEOUT: "60"
+  MC_STARTUP_TIMEOUT: "300"
+  MC_RAM: ${{ inputs.ram || '4G' }}
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Configure SSH
+        env:
+          MC_VM_HOST: ${{ secrets.MC_VM_HOST }}
+          MC_VM_USER: ${{ secrets.MC_VM_USER }}
+          MC_VM_SSH_KEY: ${{ secrets.MC_VM_SSH_KEY }}
+        run: |
+          set -euo pipefail
+          mkdir -p "$HOME/.ssh"
+          chmod 700 "$HOME/.ssh"
+          printf '%s\n' "$MC_VM_SSH_KEY" > "$HOME/.ssh/minecraft_deploy"
+          chmod 600 "$HOME/.ssh/minecraft_deploy"
+          ssh-keyscan -p "$MC_VM_PORT" "$MC_VM_HOST" >> "$HOME/.ssh/known_hosts"
+          {
+            echo "MC_VM_HOST=$MC_VM_HOST"
+            echo "MC_VM_USER=$MC_VM_USER"
+          } >> "$GITHUB_ENV"
+
+      - name: Upload repository
+        run: |
+          set -euo pipefail
+          printf -v remote_dir '%q' "$MC_SERVER_DIR"
+          git archive --format=tar "$GITHUB_SHA" |
+            ssh -i "$HOME/.ssh/minecraft_deploy" -p "$MC_VM_PORT" "$MC_VM_USER@$MC_VM_HOST" \
+              "mkdir -p $remote_dir && tar -xf - -C $remote_dir"
+
+      - name: Stop server
+        run: |
+          set -euo pipefail
+          quote() { printf '%q' "$1"; }
+          remote_command="MC_TMUX_SESSION=$(quote "$MC_TMUX_SESSION")"
+          remote_command+=" MC_SHUTDOWN_TIMEOUT=$(quote "$MC_SHUTDOWN_TIMEOUT")"
+          remote_command+=" bash $(quote "$MC_SERVER_DIR/.github/scripts/stop-server.sh")"
+          ssh -i "$HOME/.ssh/minecraft_deploy" -p "$MC_VM_PORT" \
+            "$MC_VM_USER@$MC_VM_HOST" "$remote_command"
+
+      - name: Start server and wait for readiness
+        run: |
+          set -euo pipefail
+          quote() { printf '%q' "$1"; }
+          remote_command="MC_SERVER_DIR=$(quote "$MC_SERVER_DIR")"
+          remote_command+=" MC_TMUX_SESSION=$(quote "$MC_TMUX_SESSION")"
+          remote_command+=" MC_RAM=$(quote "$MC_RAM")"
+          remote_command+=" MC_READY_PATTERN=$(quote "$MC_READY_PATTERN")"
+          remote_command+=" MC_STARTUP_TIMEOUT=$(quote "$MC_STARTUP_TIMEOUT")"
+          remote_command+=" bash $(quote "$MC_SERVER_DIR/.github/scripts/start-server.sh")"
+          ssh -i "$HOME/.ssh/minecraft_deploy" -p "$MC_VM_PORT" \
+            "$MC_VM_USER@$MC_VM_HOST" "$remote_command"

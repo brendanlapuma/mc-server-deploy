@@ -1,0 +1,36 @@
+name: Stop Minecraft server
+
+on:
+  workflow_dispatch:
+
+permissions: {}
+
+env:
+  MC_VM_PORT: "22"
+  MC_TMUX_SESSION: "minecraft"
+  MC_SHUTDOWN_TIMEOUT: "60"
+
+jobs:
+  stop:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Configure SSH
+        env:
+          MC_VM_HOST: ${{ secrets.MC_VM_HOST }}
+          MC_VM_USER: ${{ secrets.MC_VM_USER }}
+          MC_VM_SSH_KEY: ${{ secrets.MC_VM_SSH_KEY }}
+        run: |
+          set -euo pipefail
+          mkdir -p "$HOME/.ssh"
+          chmod 700 "$HOME/.ssh"
+          printf '%s\n' "$MC_VM_SSH_KEY" > "$HOME/.ssh/minecraft_deploy"
+          chmod 600 "$HOME/.ssh/minecraft_deploy"
+          ssh-keyscan -p "$MC_VM_PORT" "$MC_VM_HOST" >> "$HOME/.ssh/known_hosts"
+          export MC_TMUX_SESSION MC_SHUTDOWN_TIMEOUT
+          ssh -i "$HOME/.ssh/minecraft_deploy" -p "$MC_VM_PORT" \
+            "$MC_VM_USER@$MC_VM_HOST" \
+            "MC_TMUX_SESSION=$(printf '%q' "$MC_TMUX_SESSION") MC_SHUTDOWN_TIMEOUT=$(printf '%q' "$MC_SHUTDOWN_TIMEOUT") bash -s" \
+            < .github/scripts/stop-server.sh
