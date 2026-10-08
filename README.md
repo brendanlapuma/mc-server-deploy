@@ -24,22 +24,22 @@ and directory while preserving `.github/`. Then copy the files for your chosen M
 
 ## Files your server must provide
 
-The deployment expects these files at the repository root:
+The current example uses Fabric and expects these files at the repository root:
 
-- `run.sh` — executable server startup script.
-- `user_jvm_args.txt` — JVM argument file used by `run.sh`, with an optional
-  active `-Xmx...` entry.
+- `start.sh` — executable startup script.
+- `fabric-server-launch.jar` — Fabric's server launcher.
+- `server.jar` — the Minecraft server jar loaded by Fabric.
+- `libraries/` — libraries referenced by the Fabric launcher.
 
-The provided example is a NeoForge server. Its `run.sh` uses NeoForge's
-generated `unix_args.txt`, and its `user_jvm_args.txt` contains JVM options.
-Other server distributions are supported if they provide the same two-file
-interface, or if `.github/scripts/start-server.sh` is adjusted to match their
-launcher.
+`start.sh` starts Fabric with the selected RAM amount:
 
-If your server uses a different startup command, argument file, or argument
-format, modify `.github/scripts/start-server.sh`. If it does not use
-`user_jvm_args.txt`, remove or replace the RAM-editing logic there and keep the
-final command that starts your server in the tmux session.
+```bash
+java -Xmx"${MC_RAM:-2G}" -jar fabric-server-launch.jar nogui "$@"
+```
+
+If you use a different server distribution, update `start.sh` and keep
+`.github/scripts/start-server.sh`'s `MC_RAM` interface, or adjust that script
+to match the new launcher.
 
 ## Runtime model
 
@@ -185,10 +185,9 @@ repository's **Actions** tab and select **Run workflow**.
 
 To back up changes made while playing, run **Back up Minecraft server**. It
 stops the server, copies the VM state into a branch, opens a pull request
-against `main`, and starts the server again using the RAM setting already
-active in the VM's `user_jvm_args.txt`. Logs and `.github/` are excluded from
-the backup. Merge the pull request before deploying if you want to preserve
-the backed-up state.
+against `main`, and starts the server again using the RAM default in
+`start.sh`. Logs and `.github/` are excluded from the backup. Merge the pull
+request before deploying if you want to preserve the backed-up state.
 
 Do not commit private keys, operator credentials, or other secrets. World data,
 logs, libraries, mods, and configuration files are intentionally treated as
