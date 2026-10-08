@@ -131,6 +131,10 @@ Add these repository **secrets**:
 - `MC_VM_SSH_KEY`: Use the complete private key printed from
   `~/.ssh/minecraft-deploy` in the previous step.
 
+Enable **Settings → Actions → General → Workflow permissions → Allow GitHub
+Actions to create and approve pull requests**. The backup workflow needs this
+repository setting to open its pull request after pushing the backup branch.
+
 Manual deployment runs can choose from the workflow's **Run workflow** menu.
 
 The VM port (`22`), server directory (`~/minecraft-server`), and tmux session
