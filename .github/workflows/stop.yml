@@ -32,4 +32,11 @@ jobs:
           bash .github/scripts/configure-ssh.sh
 
       - name: Stop server
-        run: bash .github/scripts/stop-server.sh
+        run: |
+          set -euo pipefail
+          printf -v session '%q' "$MC_TMUX_SESSION"
+          printf -v timeout '%q' "$MC_SHUTDOWN_TIMEOUT"
+          ssh -i "$HOME/.ssh/minecraft_deploy" -p "$MC_VM_PORT" \
+            "$MC_VM_USER@$MC_VM_HOST" \
+            "MC_TMUX_SESSION=$session MC_SHUTDOWN_TIMEOUT=$timeout bash -s" \
+            < .github/scripts/stop-server.sh

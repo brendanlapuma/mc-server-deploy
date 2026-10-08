@@ -56,7 +56,14 @@ jobs:
               "cat > \$HOME/$staging_archive"
 
       - name: Stop server
-        run: bash .github/scripts/stop-server.sh
+        run: |
+          set -euo pipefail
+          printf -v session '%q' "$MC_TMUX_SESSION"
+          printf -v timeout '%q' "$MC_SHUTDOWN_TIMEOUT"
+          ssh -i "$HOME/.ssh/minecraft_deploy" -p "$MC_VM_PORT" \
+            "$MC_VM_USER@$MC_VM_HOST" \
+            "MC_TMUX_SESSION=$session MC_SHUTDOWN_TIMEOUT=$timeout bash -s" \
+            < .github/scripts/stop-server.sh
 
       - name: Replace server files
         run: |
@@ -71,4 +78,14 @@ jobs:
             "$MC_VM_USER@$MC_VM_HOST" "$remote_command"
 
       - name: Start server and wait for readiness
-        run: bash .github/scripts/run-server.sh
+        run: |
+          set -euo pipefail
+          printf -v server_dir '%q' "$MC_SERVER_DIR"
+          printf -v session '%q' "$MC_TMUX_SESSION"
+          printf -v ram '%q' "$MC_RAM"
+          printf -v pattern '%q' "$MC_READY_PATTERN"
+          printf -v timeout '%q' "$MC_STARTUP_TIMEOUT"
+          ssh -i "$HOME/.ssh/minecraft_deploy" -p "$MC_VM_PORT" \
+            "$MC_VM_USER@$MC_VM_HOST" \
+            "MC_SERVER_DIR=\"\$HOME/$server_dir\" MC_TMUX_SESSION=$session MC_RAM=$ram MC_READY_PATTERN=$pattern MC_STARTUP_TIMEOUT=$timeout bash -s" \
+            < .github/scripts/start-server.sh
