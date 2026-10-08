@@ -62,7 +62,7 @@ jobs:
           find . -mindepth 1 -maxdepth 1 ! -name .git ! -name .github -exec rm -rf -- {} +
           ssh -i "$HOME/.ssh/minecraft_deploy" -p "$MC_VM_PORT" \
             "$MC_VM_USER@$MC_VM_HOST" \
-            "tar --exclude=.github --exclude=logs --exclude=server.log -C \"\$HOME/$MC_SERVER_DIR\" -cf - ." |
+            "tar --exclude=.github --exclude=logs --exclude=server.log --exclude=DistantHorizons.sqlite -C \"\$HOME/$MC_SERVER_DIR\" -cf - ." |
             tar -xf - -C .
 
       - name: Create backup pull request
