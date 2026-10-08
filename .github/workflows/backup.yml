@@ -2,6 +2,9 @@ name: Back up Minecraft server
 
 on:
   workflow_dispatch:
+  # 08:00 UTC is 3:00 AM Eastern Standard Time.
+  schedule:
+    - cron: "0 8 * * *"
 
 permissions:
   contents: write
