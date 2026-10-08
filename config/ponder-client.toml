@@ -17,4 +17,3 @@ editingMode = false
 	#Choose 'NONE' to disable the Indicator altogether
 	#Allowed Values: TEXTURE, TRIANGLE, NONE
 	indicatorType = "TEXTURE"
-

@@ -1,4 +1,3 @@
-
 #.
 #Miscellaneous settings
 [misc]
@@ -64,4 +63,3 @@
 	#.
 	#Make trains require fuel to run (either from fuel tanks or solid fuels in chests/barrels)
 	realisticTrains = false
-
