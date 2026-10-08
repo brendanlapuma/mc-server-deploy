@@ -1,0 +1,22 @@
+# Max chunk downloads a player may have in flight (caps the window requested by the client)
+maxDownloadWindow = 256
+# Upper bound of chunk uploads per second per player
+uploadRateLimit = 200.0
+# Burst size for the download rate limit
+downloadBurst = 64.0
+# Upper bound of chunk downloads per second per player. Lower this if the server's upload bandwith is limited (~4 kb per chunk).
+downloadRateLimit = 200.0
+# Burst size for region sync requests
+regionRequestBurst = 20.0
+# Max chunk uploads a player may have in flight (server-side backlog per player)
+uploadWindow = 64
+# Upper bound of region sync requests per second per player
+regionRequestRateLimit = 10.0
+# Sync underground maps (required if you want to sync the Nether or underground, but enabling this will disable the cave layer feature)
+syncCaves = true
+# Validate uploaded map data on the server (recommended; small CPU cost)
+enableChunkValidation = true
+# Burst size for the upload rate limit
+uploadBurst = 64.0
+# Interval (ms) between flushes of map data to disk
+regionFlushInterval = 30000
