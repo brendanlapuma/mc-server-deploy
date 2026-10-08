@@ -119,6 +119,23 @@ cat ~/.ssh/minecraft-deploy
 Copy the complete output into the repository secret `MC_VM_SSH_KEY`. This key
 is for GitHub Actions; your existing Google Cloud SSH access remains separate.
 
+## Google Cloud firewall
+
+Create the Minecraft firewall rule in the VPC network itself, not under
+**Network firewall policies**:
+
+1. Open **VPC networks → default → Firewalls**.
+2. Click **Create VPC firewall rule**.
+3. Configure the rule with:
+   - Direction: **Ingress**
+   - Action: **Allow**
+   - Targets: **All instances in the network**
+   - Source IPv4 ranges: `0.0.0.0/0`
+   - Protocols and ports: **TCP**, port `25565`
+
+The rule must be on the **default VPC network** and apply to all instances in
+that network. This is separate from the SSH connection on port `22`.
+
 
 ## GitHub repository configuration
 
@@ -140,6 +157,14 @@ Manual deployment runs can choose from the workflow's **Run workflow** menu.
 The VM port (`22`), server directory (`~/minecraft-server`), and tmux session
 (`minecraft`) are internal deployment settings. Change them in both workflows
 only if your VM layout requires different values.
+
+## Connecting to the server
+
+In Minecraft, connect to the VM's external IP address on port `25565`:
+
+```text
+VM_EXTERNAL_IP:25565
+```
 
 ## Workflow behavior
 
