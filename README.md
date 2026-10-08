@@ -156,10 +156,9 @@ repository's **Actions** tab and select **Run workflow**.
 
 To back up changes made while playing, run **Back up Minecraft server**. It
 stops the server, copies the VM state into a branch, opens a pull request
-against `main`, and starts the server again using the RAM setting already
-active in the VM's `user_jvm_args.txt`. Logs and `.github/` are excluded from
-the backup. Merge the pull request before deploying if you want to preserve
-the backed-up state.
+against `main`, and starts the server again. Logs and `.github/` are excluded
+from the backup. Merge the pull request before deploying if you want to
+preserve the backed-up state.
 
 Do not commit private keys, operator credentials, or other secrets. World data,
 logs, libraries, mods, and configuration files are intentionally treated as
