@@ -93,31 +93,50 @@ timeout --version
 ```
 
 The Google Cloud SSH button does not provide a private key that GitHub Actions
-can use. Generate a deployment key inside the VM's Google Cloud SSH terminal:
-
-```bash
-ssh-keygen -t ed25519 -f ~/.ssh/minecraft-deploy -C "minecraft-deploy"
-```
-
-When prompted for a passphrase, leave it empty so GitHub Actions can use the
-key non-interactively. Add the generated public key to the VM user's
-authorized keys:
+can use. Generate a separate deployment key inside the VM's Google Cloud SSH
+terminal:
 
 ```bash
 mkdir -p ~/.ssh
 chmod 700 ~/.ssh
-cat ~/.ssh/minecraft-deploy.pub >> ~/.ssh/authorized_keys
-chmod 600 ~/.ssh/authorized_keys
+
+ssh-keygen -t ed25519 \
+  -f ~/.ssh/minecraft-deploy \
+  -C "YOUR_VM_USER"
 ```
 
-Display the generated private key in the VM terminal:
+Replace `YOUR_VM_USER` with the output of `whoami`. When prompted for a
+passphrase, press Enter twice to leave it empty so GitHub Actions can use the
+key non-interactively.
+
+Display the public key:
+
+```bash
+cat ~/.ssh/minecraft-deploy.pub
+```
+
+In Google Cloud Console, open **Compute Engine → VM instances → your VM →
+Edit → SSH Keys**, click **Add item**, and paste the complete public-key line.
+The line must end with the actual VM username, not `minecraft-deploy`:
+
+```text
+ssh-ed25519 AAAA... YOUR_VM_USER
+```
+
+Save the VM, wait a few seconds, and verify that the key was installed:
+
+```bash
+grep -n "YOUR_VM_USER" ~/.ssh/authorized_keys
+```
+
+Display the generated private key:
 
 ```bash
 cat ~/.ssh/minecraft-deploy
 ```
 
-Copy the complete output into the repository secret `MC_VM_SSH_KEY`. This key
-is for GitHub Actions; your existing Google Cloud SSH access remains separate.
+Copy the complete output, including the `BEGIN` and `END` lines, into the
+repository secret `MC_VM_SSH_KEY`.
 
 ## Google Cloud firewall
 
