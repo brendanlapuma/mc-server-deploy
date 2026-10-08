@@ -2,18 +2,6 @@ name: Back up Minecraft server
 
 on:
   workflow_dispatch:
-    inputs:
-      ram:
-        description: Maximum RAM allocated to Minecraft after the backup
-        required: true
-        default: 4G
-        type: choice
-        options:
-          - 2G
-          - 4G
-          - 6G
-          - 8G
-          - 16G
 
 permissions:
   contents: write
@@ -30,7 +18,6 @@ env:
   MC_READY_PATTERN: 'Done \([0-9]+(\.[0-9]+)?s\)! For help, type "help"'
   MC_SHUTDOWN_TIMEOUT: "60"
   MC_STARTUP_TIMEOUT: "300"
-  MC_RAM: ${{ inputs.ram || '4G' }}
 
 jobs:
   backup:
@@ -107,10 +94,9 @@ jobs:
           set -euo pipefail
           printf -v server_dir '%q' "$MC_SERVER_DIR"
           printf -v session '%q' "$MC_TMUX_SESSION"
-          printf -v ram '%q' "$MC_RAM"
           printf -v pattern '%q' "$MC_READY_PATTERN"
           printf -v timeout '%q' "$MC_STARTUP_TIMEOUT"
           ssh -i "$HOME/.ssh/minecraft_deploy" -p "$MC_VM_PORT" \
             "$MC_VM_USER@$MC_VM_HOST" \
-            "MC_SERVER_DIR=\"\$HOME/$server_dir\" MC_TMUX_SESSION=$session MC_RAM=$ram MC_READY_PATTERN=$pattern MC_STARTUP_TIMEOUT=$timeout bash -s" \
+            "MC_SERVER_DIR=\"\$HOME/$server_dir\" MC_TMUX_SESSION=$session MC_READY_PATTERN=$pattern MC_STARTUP_TIMEOUT=$timeout bash -s" \
             < .github/scripts/start-server.sh
