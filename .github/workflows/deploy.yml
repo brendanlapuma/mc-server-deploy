@@ -68,14 +68,16 @@ jobs:
       - name: Replace server files
         run: |
           set -euo pipefail
-          remote_command="server_dir=\"\$HOME/$(printf '%q' "$MC_SERVER_DIR")\""
-          remote_command+=" staging_archive=\"\$HOME/$(printf '%q' "$MC_STAGING_ARCHIVE")\""
-          remote_command+=' mkdir -p "$server_dir"'
-          remote_command+=' find "$server_dir" -mindepth 1 -maxdepth 1 -exec rm -rf -- {} +'
-          remote_command+=' tar -xf "$staging_archive" -C "$server_dir"'
-          remote_command+=' rm -f "$staging_archive"'
           ssh -i "$HOME/.ssh/minecraft_deploy" -p "$MC_VM_PORT" \
-            "$MC_VM_USER@$MC_VM_HOST" "$remote_command"
+            "$MC_VM_USER@$MC_VM_HOST" bash -s -- "$MC_SERVER_DIR" "$MC_STAGING_ARCHIVE" <<'REMOTE'
+          set -euo pipefail
+          server_dir="$HOME/$1"
+          staging_archive="$HOME/$2"
+          mkdir -p "$server_dir"
+          find "$server_dir" -mindepth 1 -maxdepth 1 -exec rm -rf -- {} +
+          tar -xf "$staging_archive" -C "$server_dir"
+          rm -f "$staging_archive"
+          REMOTE
 
       - name: Start server and wait for readiness
         run: |
