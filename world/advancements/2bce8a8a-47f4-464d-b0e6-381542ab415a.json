@@ -1417,539 +1417,9 @@
     },
     "done": true
   },
-  "minecraft:recipes/redstone/acacia_button": {
-    "criteria": {
-      "has_planks": "2026-10-09 01:11:36 +0000"
-    },
-    "done": true
-  },
-  "create:recipes/building_blocks/cut_scorchia_brick_slab_from_stone_types_scorchia_stonecutting": {
-    "criteria": {
-      "has_stone_types_scorchia": "2026-10-09 01:41:50 +0000"
-    },
-    "done": true
-  },
-  "pgctoilet:recipes/toilet_bowl": {
-    "criteria": {
-      "has_quartz": "2026-10-09 01:48:29 +0000"
-    },
-    "done": true
-  },
-  "create:recipes/building_blocks/cut_scorchia_stairs_from_stone_types_scorchia_stonecutting": {
-    "criteria": {
-      "has_stone_types_scorchia": "2026-10-09 01:41:50 +0000"
-    },
-    "done": true
-  },
-  "railways:recipes/misc/crafting/palettes/trapdoors/white_locometal_trapdoor": {
-    "criteria": {
-      "has_item": "2026-10-09 01:14:49 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/quartz_slab": {
-    "criteria": {
-      "has_quartz_block": "2026-10-09 01:48:29 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/tools/golden_axe": {
-    "criteria": {
-      "has_gold_ingot": "2026-10-09 01:35:10 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/tools/golden_pickaxe": {
-    "criteria": {
-      "has_gold_ingot": "2026-10-09 01:35:10 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/quartz_bricks": {
-    "criteria": {
-      "has_quartz_block": "2026-10-09 01:48:29 +0000"
-    },
-    "done": true
-  },
-  "minecraft:nether/explore_nether": {
-    "criteria": {
-      "minecraft:crimson_forest": "2026-10-09 01:32:50 +0000",
-      "minecraft:nether_wastes": "2026-10-09 01:28:52 +0000",
-      "minecraft:basalt_deltas": "2026-10-09 01:19:13 +0000"
-    },
-    "done": false
-  },
-  "minecraft:recipes/decorations/blue_stained_glass_pane_from_glass_pane": {
-    "criteria": {
-      "has_blue_dye": "2026-10-09 01:12:09 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/combat/diamond_sword": {
-    "criteria": {
-      "has_diamond": "2026-10-09 01:36:25 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/jukebox": {
-    "criteria": {
-      "has_diamond": "2026-10-09 01:36:25 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/gold_nugget": {
-    "criteria": {
-      "has_gold_ingot": "2026-10-09 01:35:10 +0000"
-    },
-    "done": true
-  },
-  "create:recipes/building_blocks/cut_scorchia_from_stone_types_scorchia_stonecutting": {
-    "criteria": {
-      "has_stone_types_scorchia": "2026-10-09 01:41:50 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/combat/iron_helmet": {
-    "criteria": {
-      "has_iron_ingot": "2026-10-09 01:07:54 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/tools/golden_shovel": {
-    "criteria": {
-      "has_gold_ingot": "2026-10-09 01:35:10 +0000"
-    },
-    "done": true
-  },
-  "railways:recipes/misc/crafting/palettes/trapdoors/brown_locometal_trapdoor": {
-    "criteria": {
-      "has_item": "2026-10-09 01:14:49 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/combat/diamond_chestplate": {
-    "criteria": {
-      "has_diamond": "2026-10-09 01:36:25 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/food/golden_apple": {
-    "criteria": {
-      "has_gold_ingot": "2026-10-09 01:35:10 +0000"
-    },
-    "done": true
-  },
-  "create:recipes/building_blocks/cut_scorchia_wall_from_stone_types_scorchia_stonecutting": {
-    "criteria": {
-      "has_stone_types_scorchia": "2026-10-09 01:41:50 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/snow": {
-    "criteria": {
-      "has_snowball": "2026-10-09 00:56:23 +0000"
-    },
-    "done": true
-  },
-  "create:recipes/building_blocks/cut_scorchia_brick_wall_from_stone_types_scorchia_stonecutting": {
-    "criteria": {
-      "has_stone_types_scorchia": "2026-10-09 01:41:50 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/combat/golden_boots": {
-    "criteria": {
-      "has_gold_ingot": "2026-10-09 01:35:10 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/gold_nugget_from_blasting": {
-    "criteria": {
-      "has_golden_chestplate": "2026-10-09 01:35:35 +0000"
-    },
-    "done": true
-  },
-  "railways:recipes/misc/crafting/palettes/trapdoors/lime_locometal_trapdoor": {
-    "criteria": {
-      "has_item": "2026-10-09 01:14:49 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/magenta_dye_from_blue_red_pink": {
-    "criteria": {
-      "has_blue_dye": "2026-10-09 01:12:09 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/tools/shears": {
-    "criteria": {
-      "has_iron_ingot": "2026-10-09 01:07:54 +0000"
-    },
-    "done": true
-  },
-  "railways:recipes/misc/crafting/palettes/trapdoors/granite_locometal_trapdoor": {
-    "criteria": {
-      "has_item": "2026-10-09 01:14:49 +0000"
-    },
-    "done": true
-  },
   "minecraft:adventure/sleep_in_bed": {
     "criteria": {
       "slept_in_bed": "2026-10-09 00:47:55 +0000"
-    },
-    "done": true
-  },
-  "create:recipes/building_blocks/small_scorchia_brick_slab_from_stone_types_scorchia_stonecutting": {
-    "criteria": {
-      "has_stone_types_scorchia": "2026-10-09 01:41:50 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/tools/diamond_pickaxe": {
-    "criteria": {
-      "has_diamond": "2026-10-09 01:36:25 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/combat/golden_chestplate": {
-    "criteria": {
-      "has_gold_ingot": "2026-10-09 01:35:10 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/iron_block": {
-    "criteria": {
-      "has_iron_ingot": "2026-10-09 01:07:54 +0000"
-    },
-    "done": true
-  },
-  "railways:recipes/misc/crafting/palettes/trapdoors/diorite_locometal_trapdoor": {
-    "criteria": {
-      "has_item": "2026-10-09 01:14:49 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/acacia_stairs": {
-    "criteria": {
-      "has_planks": "2026-10-09 01:11:36 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/soul_torch": {
-    "criteria": {
-      "has_soul_sand": "2026-10-09 01:35:49 +0000"
-    },
-    "done": true
-  },
-  "create:recipes/misc/crafting/materials/andesite_alloy": {
-    "criteria": {
-      "has_item": "2026-10-09 01:07:54 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/diorite": {
-    "criteria": {
-      "has_quartz": "2026-10-09 01:29:09 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/granite": {
-    "criteria": {
-      "has_quartz": "2026-10-09 01:29:09 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/redstone/acacia_door": {
-    "criteria": {
-      "has_planks": "2026-10-09 01:11:36 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/spruce_fence": {
-    "criteria": {
-      "has_planks": "2026-10-09 01:11:28 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/tools/diamond_hoe": {
-    "criteria": {
-      "has_diamond": "2026-10-09 01:36:25 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/tools/diamond_shovel": {
-    "criteria": {
-      "has_diamond": "2026-10-09 01:36:25 +0000"
-    },
-    "done": true
-  },
-  "create:recipes/building_blocks/cut_scorchia_brick_stairs_from_stone_types_scorchia_stonecutting": {
-    "criteria": {
-      "has_stone_types_scorchia": "2026-10-09 01:41:50 +0000"
-    },
-    "done": true
-  },
-  "create:recipes/building_blocks/cut_scorchia_slab_from_stone_types_scorchia_stonecutting": {
-    "criteria": {
-      "has_stone_types_scorchia": "2026-10-09 01:41:50 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/redstone/light_weighted_pressure_plate": {
-    "criteria": {
-      "has_gold_ingot": "2026-10-09 01:35:10 +0000"
-    },
-    "done": true
-  },
-  "create:recipes/building_blocks/spruce_window": {
-    "criteria": {
-      "has_ingredient": "2026-10-09 01:11:28 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/quartz_block": {
-    "criteria": {
-      "has_quartz": "2026-10-09 01:29:09 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/redstone/spruce_button": {
-    "criteria": {
-      "has_planks": "2026-10-09 01:11:28 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/redstone/hopper": {
-    "criteria": {
-      "has_iron_ingot": "2026-10-09 01:07:54 +0000"
-    },
-    "done": true
-  },
-  "railways:recipes/misc/crafting/palettes/trapdoors/magenta_locometal_trapdoor": {
-    "criteria": {
-      "has_item": "2026-10-09 01:14:49 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/smooth_basalt": {
-    "criteria": {
-      "has_basalt": "2026-10-09 01:28:11 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/dye_blue_wool": {
-    "criteria": {
-      "has_needed_dye": "2026-10-09 01:12:09 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/redstone/comparator": {
-    "criteria": {
-      "has_quartz": "2026-10-09 01:29:09 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/quartz_stairs": {
-    "criteria": {
-      "has_quartz_block": "2026-10-09 01:48:29 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/light_blue_dye_from_blue_white_dye": {
-    "criteria": {
-      "has_blue_dye": "2026-10-09 01:12:09 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/combat/iron_boots": {
-    "criteria": {
-      "has_iron_ingot": "2026-10-09 01:07:54 +0000"
-    },
-    "done": true
-  },
-  "railways:recipes/misc/crafting/palettes/trapdoors/turquoise_locometal_trapdoor": {
-    "criteria": {
-      "has_item": "2026-10-09 01:14:49 +0000"
-    },
-    "done": true
-  },
-  "create:recipes/building_blocks/acacia_window": {
-    "criteria": {
-      "has_ingredient": "2026-10-09 01:11:36 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/redstone/spruce_pressure_plate": {
-    "criteria": {
-      "has_planks": "2026-10-09 01:11:28 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/dye_blue_carpet": {
-    "criteria": {
-      "has_needed_dye": "2026-10-09 01:12:09 +0000"
-    },
-    "done": true
-  },
-  "railways:recipes/misc/crafting/palettes/trapdoors/maroon_locometal_trapdoor": {
-    "criteria": {
-      "has_item": "2026-10-09 01:14:49 +0000"
-    },
-    "done": true
-  },
-  "create:recipes/building_blocks/polished_cut_scorchia_stairs_from_stone_types_scorchia_stonecutting": {
-    "criteria": {
-      "has_stone_types_scorchia": "2026-10-09 01:41:50 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/acacia_sign": {
-    "criteria": {
-      "has_planks": "2026-10-09 01:11:36 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/lantern": {
-    "criteria": {
-      "has_iron_ingot": "2026-10-09 01:07:54 +0000"
-    },
-    "done": true
-  },
-  "railways:recipes/misc/crafting/palettes/trapdoors/olive_green_locometal_trapdoor": {
-    "criteria": {
-      "has_item": "2026-10-09 01:14:49 +0000"
-    },
-    "done": true
-  },
-  "railways:recipes/misc/crafting/palettes/trapdoors/light_blue_locometal_trapdoor": {
-    "criteria": {
-      "has_item": "2026-10-09 01:14:49 +0000"
-    },
-    "done": true
-  },
-  "create:recipes/building_blocks/polished_cut_scorchia_from_stone_types_scorchia_stonecutting": {
-    "criteria": {
-      "has_stone_types_scorchia": "2026-10-09 01:41:50 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/tools/iron_shovel": {
-    "criteria": {
-      "has_iron_ingot": "2026-10-09 01:07:54 +0000"
-    },
-    "done": true
-  },
-  "railways:recipes/misc/crafting/palettes/trapdoors/dripstone_locometal_trapdoor": {
-    "criteria": {
-      "has_item": "2026-10-09 01:14:49 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/combat/diamond_helmet": {
-    "criteria": {
-      "has_diamond": "2026-10-09 01:36:25 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/chiseled_nether_bricks_from_nether_bricks_stonecutting": {
-    "criteria": {
-      "has_nether_bricks": "2026-10-09 01:37:21 +0000"
-    },
-    "done": true
-  },
-  "minecraft:story/form_obsidian": {
-    "criteria": {
-      "obsidian": "2026-10-09 01:07:44 +0000"
-    },
-    "done": true
-  },
-  "create:recipes/building_blocks/layered_scorchia_from_stone_types_scorchia_stonecutting": {
-    "criteria": {
-      "has_stone_types_scorchia": "2026-10-09 01:41:50 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/combat/golden_sword": {
-    "criteria": {
-      "has_gold_ingot": "2026-10-09 01:35:10 +0000"
-    },
-    "done": true
-  },
-  "railways:recipes/misc/crafting/palettes/trapdoors/red_locometal_trapdoor": {
-    "criteria": {
-      "has_item": "2026-10-09 01:14:49 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/gold_block": {
-    "criteria": {
-      "has_gold_ingot": "2026-10-09 01:35:10 +0000"
-    },
-    "done": true
-  },
-  "railways:recipes/misc/crafting/palettes/trapdoors/limestone_locometal_trapdoor": {
-    "criteria": {
-      "has_item": "2026-10-09 01:14:49 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/redstone/iron_trapdoor": {
-    "criteria": {
-      "has_iron_ingot": "2026-10-09 01:07:54 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/chiseled_quartz_block_from_quartz_block_stonecutting": {
-    "criteria": {
-      "has_quartz_block": "2026-10-09 01:48:29 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/nether_brick_wall_from_nether_bricks_stonecutting": {
-    "criteria": {
-      "has_nether_bricks": "2026-10-09 01:37:21 +0000"
-    },
-    "done": true
-  },
-  "railways:recipes/misc/crafting/palettes/trapdoors/vermilion_locometal_trapdoor": {
-    "criteria": {
-      "has_item": "2026-10-09 01:14:49 +0000"
-    },
-    "done": true
-  },
-  "railways:recipes/misc/crafting/palettes/trapdoors/orange_locometal_trapdoor": {
-    "criteria": {
-      "has_item": "2026-10-09 01:14:49 +0000"
-    },
-    "done": true
-  },
-  "create:recipes/building_blocks/small_scorchia_brick_wall_from_stone_types_scorchia_stonecutting": {
-    "criteria": {
-      "has_stone_types_scorchia": "2026-10-09 01:41:50 +0000"
-    },
-    "done": true
-  },
-  "create:recipes/building_blocks/scorchia_pillar_from_stone_types_scorchia_stonecutting": {
-    "criteria": {
-      "has_stone_types_scorchia": "2026-10-09 01:41:50 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/dye_blue_bed": {
-    "criteria": {
-      "has_needed_dye": "2026-10-09 01:12:09 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/quartz_slab_from_stonecutting": {
-    "criteria": {
-      "has_quartz_block": "2026-10-09 01:48:29 +0000"
-    },
-    "done": true
-  },
-  "railways:recipes/misc/crafting/palettes/trapdoors/pine_green_locometal_trapdoor": {
-    "criteria": {
-      "has_item": "2026-10-09 01:14:49 +0000"
     },
     "done": true
   },
@@ -1959,123 +1429,15 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/diamond_block": {
+  "minecraft:recipes/decorations/snow": {
     "criteria": {
-      "has_diamond": "2026-10-09 01:36:25 +0000"
+      "has_snowball": "2026-10-09 00:56:23 +0000"
     },
     "done": true
   },
-  "minecraft:recipes/decorations/nether_brick_wall": {
+  "minecraft:recipes/building_blocks/snow_block": {
     "criteria": {
-      "has_nether_bricks": "2026-10-09 01:37:21 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/magenta_dye_from_blue_red_white_dye": {
-    "criteria": {
-      "has_blue_dye": "2026-10-09 01:12:09 +0000"
-    },
-    "done": true
-  },
-  "pgctoilet:recipes/urinal": {
-    "criteria": {
-      "has_quartz": "2026-10-09 01:48:29 +0000"
-    },
-    "done": true
-  },
-  "minecraft:story/mine_diamond": {
-    "criteria": {
-      "diamond": "2026-10-09 01:36:25 +0000"
-    },
-    "done": true
-  },
-  "minecraft:nether/find_fortress": {
-    "criteria": {
-      "fortress": "2026-10-09 01:32:12 +0000"
-    },
-    "done": true
-  },
-  "railways:recipes/misc/crafting/palettes/trapdoors/pink_locometal_trapdoor": {
-    "criteria": {
-      "has_item": "2026-10-09 01:14:49 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/nether_brick": {
-    "criteria": {
-      "has_netherrack": "2026-10-09 01:29:04 +0000"
-    },
-    "done": true
-  },
-  "railways:recipes/misc/crafting/palettes/trapdoors/locometal_trapdoor": {
-    "criteria": {
-      "has_item": "2026-10-09 01:14:49 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/polished_basalt": {
-    "criteria": {
-      "has_basalt": "2026-10-09 01:28:11 +0000"
-    },
-    "done": true
-  },
-  "create:recipes/building_blocks/polished_cut_scorchia_slab_from_stone_types_scorchia_stonecutting": {
-    "criteria": {
-      "has_stone_types_scorchia": "2026-10-09 01:41:50 +0000"
-    },
-    "done": true
-  },
-  "railways:recipes/misc/crafting/palettes/trapdoors/light_gray_locometal_trapdoor": {
-    "criteria": {
-      "has_item": "2026-10-09 01:14:49 +0000"
-    },
-    "done": true
-  },
-  "railways:recipes/misc/crafting/palettes/trapdoors/green_locometal_trapdoor": {
-    "criteria": {
-      "has_item": "2026-10-09 01:14:49 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/redstone/heavy_weighted_pressure_plate": {
-    "criteria": {
-      "has_iron_ingot": "2026-10-09 01:07:54 +0000"
-    },
-    "done": true
-  },
-  "create:recipes/building_blocks/small_scorchia_bricks_from_stone_types_scorchia_stonecutting": {
-    "criteria": {
-      "has_stone_types_scorchia": "2026-10-09 01:41:50 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/combat/iron_leggings": {
-    "criteria": {
-      "has_iron_ingot": "2026-10-09 01:07:54 +0000"
-    },
-    "done": true
-  },
-  "minecraft:story/obtain_armor": {
-    "criteria": {
-      "iron_chestplate": "2026-10-09 01:06:03 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/combat/diamond_leggings": {
-    "criteria": {
-      "has_diamond": "2026-10-09 01:36:25 +0000"
-    },
-    "done": true
-  },
-  "create:recipes/misc/smelting/scoria": {
-    "criteria": {
-      "has_item": "2026-10-09 01:35:49 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/iron_nugget_from_smelting": {
-    "criteria": {
-      "has_iron_chestplate": "2026-10-09 01:06:03 +0000"
+      "has_snowball": "2026-10-09 00:56:23 +0000"
     },
     "done": true
   },
@@ -2085,57 +1447,141 @@
     },
     "done": true
   },
+  "minecraft:recipes/food/baked_potato": {
+    "criteria": {
+      "has_potato": "2026-10-09 01:05:22 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/baked_potato_from_smoking": {
+    "criteria": {
+      "has_potato": "2026-10-09 01:05:22 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/spruce_wood": {
+    "criteria": {
+      "has_log": "2026-10-09 01:05:23 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/spruce_planks": {
+    "criteria": {
+      "has_logs": "2026-10-09 01:05:23 +0000"
+    },
+    "done": true
+  },
+  "minecraft:story/obtain_armor": {
+    "criteria": {
+      "iron_chestplate": "2026-10-09 01:06:03 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_nugget_from_smelting": {
+    "criteria": {
+      "has_iron_chestplate": "2026-10-09 01:06:03 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_nugget_from_blasting": {
+    "criteria": {
+      "has_iron_chestplate": "2026-10-09 01:06:03 +0000"
+    },
+    "done": true
+  },
+  "minecraft:story/form_obsidian": {
+    "criteria": {
+      "obsidian": "2026-10-09 01:07:44 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/flint_and_steel": {
+    "criteria": {
+      "has_obsidian": "2026-10-09 01:07:44 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/enchanting_table": {
+    "criteria": {
+      "has_obsidian": "2026-10-09 01:07:44 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/iron_helmet": {
+    "criteria": {
+      "has_iron_ingot": "2026-10-09 01:07:54 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/shears": {
+    "criteria": {
+      "has_iron_ingot": "2026-10-09 01:07:54 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/iron_block": {
+    "criteria": {
+      "has_iron_ingot": "2026-10-09 01:07:54 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/misc/crafting/materials/andesite_alloy": {
+    "criteria": {
+      "has_item": "2026-10-09 01:07:54 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/hopper": {
+    "criteria": {
+      "has_iron_ingot": "2026-10-09 01:07:54 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/iron_boots": {
+    "criteria": {
+      "has_iron_ingot": "2026-10-09 01:07:54 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/lantern": {
+    "criteria": {
+      "has_iron_ingot": "2026-10-09 01:07:54 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/iron_shovel": {
+    "criteria": {
+      "has_iron_ingot": "2026-10-09 01:07:54 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/iron_trapdoor": {
+    "criteria": {
+      "has_iron_ingot": "2026-10-09 01:07:54 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/heavy_weighted_pressure_plate": {
+    "criteria": {
+      "has_iron_ingot": "2026-10-09 01:07:54 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/iron_leggings": {
+    "criteria": {
+      "has_iron_ingot": "2026-10-09 01:07:54 +0000"
+    },
+    "done": true
+  },
   "create:recipes/building_blocks/industrial_iron_block_from_iron_ingots_stonecutting": {
     "criteria": {
       "has_iron_ingots": "2026-10-09 01:07:54 +0000"
     },
     "done": true
   },
-  "minecraft:recipes/misc/cyan_dye": {
-    "criteria": {
-      "has_blue_dye": "2026-10-09 01:12:09 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/redstone/acacia_pressure_plate": {
-    "criteria": {
-      "has_planks": "2026-10-09 01:11:36 +0000"
-    },
-    "done": true
-  },
-  "minecraft:story/iron_tools": {
-    "criteria": {
-      "iron_pickaxe": "2026-10-09 01:14:28 +0000"
-    },
-    "done": true
-  },
   "minecraft:recipes/combat/iron_chestplate": {
     "criteria": {
       "has_iron_ingot": "2026-10-09 01:07:54 +0000"
-    },
-    "done": true
-  },
-  "railways:recipes/misc/crafting/palettes/trapdoors/black_locometal_trapdoor": {
-    "criteria": {
-      "has_item": "2026-10-09 01:14:49 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/gold_nugget_from_smelting": {
-    "criteria": {
-      "has_golden_chestplate": "2026-10-09 01:35:35 +0000"
-    },
-    "done": true
-  },
-  "railways:recipes/misc/crafting/palettes/trapdoors/chartreuse_locometal_trapdoor": {
-    "criteria": {
-      "has_item": "2026-10-09 01:14:49 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/blue_candle": {
-    "criteria": {
-      "has_blue_dye": "2026-10-09 01:12:09 +0000"
     },
     "done": true
   },
@@ -2151,12 +1597,6 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/acacia_slab": {
-    "criteria": {
-      "has_planks": "2026-10-09 01:11:36 +0000"
-    },
-    "done": true
-  },
   "minecraft:recipes/transportation/minecart": {
     "criteria": {
       "has_iron_ingot": "2026-10-09 01:07:54 +0000"
@@ -2169,63 +1609,9 @@
     },
     "done": true
   },
-  "minecraft:story/enter_the_nether": {
-    "criteria": {
-      "entered_nether": "2026-10-09 01:19:13 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/food/baked_potato": {
-    "criteria": {
-      "has_potato": "2026-10-09 01:05:22 +0000"
-    },
-    "done": true
-  },
-  "create:recipes/building_blocks/cut_scorchia_bricks_from_stone_types_scorchia_stonecutting": {
-    "criteria": {
-      "has_stone_types_scorchia": "2026-10-09 01:41:50 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/spruce_sign": {
-    "criteria": {
-      "has_planks": "2026-10-09 01:11:28 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/combat/golden_helmet": {
-    "criteria": {
-      "has_gold_ingot": "2026-10-09 01:35:10 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/redstone/acacia_trapdoor": {
-    "criteria": {
-      "has_planks": "2026-10-09 01:11:36 +0000"
-    },
-    "done": true
-  },
-  "railways:recipes/misc/crafting/palettes/trapdoors/cyan_locometal_trapdoor": {
-    "criteria": {
-      "has_item": "2026-10-09 01:14:49 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/nether_brick_stairs": {
-    "criteria": {
-      "has_nether_bricks": "2026-10-09 01:37:21 +0000"
-    },
-    "done": true
-  },
   "minecraft:story/smelt_iron": {
     "criteria": {
       "iron": "2026-10-09 01:07:54 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/smoker": {
-    "criteria": {
-      "has_furnace": "2026-10-09 01:13:42 +0000"
     },
     "done": true
   },
@@ -2235,57 +1621,9 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/nether_brick_slab": {
-    "criteria": {
-      "has_nether_bricks": "2026-10-09 01:37:21 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/nether_wart_block": {
-    "criteria": {
-      "has_nether_wart": "2026-10-09 01:35:46 +0000"
-    },
-    "done": true
-  },
-  "railways:recipes/misc/crafting/palettes/trapdoors/sea_green_locometal_trapdoor": {
-    "criteria": {
-      "has_item": "2026-10-09 01:14:49 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/quartz_pillar_from_quartz_block_stonecutting": {
-    "criteria": {
-      "has_quartz_block": "2026-10-09 01:48:29 +0000"
-    },
-    "done": true
-  },
   "minecraft:recipes/decorations/chain": {
     "criteria": {
       "has_iron_ingot": "2026-10-09 01:07:54 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/nether_brick_stairs_from_nether_bricks_stonecutting": {
-    "criteria": {
-      "has_nether_bricks": "2026-10-09 01:37:21 +0000"
-    },
-    "done": true
-  },
-  "create:recipes/building_blocks/small_scorchia_brick_stairs_from_stone_types_scorchia_stonecutting": {
-    "criteria": {
-      "has_stone_types_scorchia": "2026-10-09 01:41:50 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/spruce_wood": {
-    "criteria": {
-      "has_log": "2026-10-09 01:05:23 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/bone_meal": {
-    "criteria": {
-      "has_bone": "2026-10-09 01:40:55 +0000"
     },
     "done": true
   },
@@ -2295,87 +1633,15 @@
     },
     "done": true
   },
-  "railways:recipes/misc/crafting/palettes/trapdoors/ochrum_locometal_trapdoor": {
-    "criteria": {
-      "has_item": "2026-10-09 01:14:49 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/quartz_pillar": {
-    "criteria": {
-      "has_quartz_block": "2026-10-09 01:48:29 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/quartz_stairs_from_quartz_block_stonecutting": {
-    "criteria": {
-      "has_quartz_block": "2026-10-09 01:48:29 +0000"
-    },
-    "done": true
-  },
   "create:recipes/misc/crafting/kinetics/empty_blaze_burner": {
     "criteria": {
       "has_item": "2026-10-09 01:07:54 +0000"
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/red_nether_bricks": {
-    "criteria": {
-      "has_nether_wart": "2026-10-09 01:35:46 +0000"
-    },
-    "done": true
-  },
-  "railways:recipes/misc/crafting/palettes/trapdoors/royal_blue_locometal_trapdoor": {
-    "criteria": {
-      "has_item": "2026-10-09 01:14:49 +0000"
-    },
-    "done": true
-  },
-  "railways:recipes/misc/crafting/palettes/trapdoors/purple_locometal_trapdoor": {
-    "criteria": {
-      "has_item": "2026-10-09 01:14:49 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/redstone/acacia_fence_gate": {
-    "criteria": {
-      "has_planks": "2026-10-09 01:11:36 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/spruce_slab": {
-    "criteria": {
-      "has_planks": "2026-10-09 01:11:28 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/nether_brick_fence": {
-    "criteria": {
-      "has_nether_bricks": "2026-10-09 01:37:21 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/redstone/daylight_detector": {
-    "criteria": {
-      "has_quartz": "2026-10-09 01:29:09 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/combat/diamond_boots": {
-    "criteria": {
-      "has_diamond": "2026-10-09 01:36:25 +0000"
-    },
-    "done": true
-  },
   "minecraft:recipes/combat/iron_sword": {
     "criteria": {
       "has_iron_ingot": "2026-10-09 01:07:54 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/redstone/observer": {
-    "criteria": {
-      "has_quartz": "2026-10-09 01:29:09 +0000"
     },
     "done": true
   },
@@ -2397,93 +1663,57 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/spruce_planks": {
+  "minecraft:recipes/tools/iron_axe": {
     "criteria": {
-      "has_logs": "2026-10-09 01:05:23 +0000"
+      "has_iron_ingot": "2026-10-09 01:07:54 +0000"
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/cracked_nether_bricks": {
+  "minecraft:recipes/redstone/iron_door": {
     "criteria": {
-      "has_nether_bricks": "2026-10-09 01:37:21 +0000"
+      "has_iron_ingot": "2026-10-09 01:07:54 +0000"
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/smooth_quartz": {
+  "minecraft:recipes/decorations/spruce_fence": {
     "criteria": {
-      "has_quartz_block": "2026-10-09 01:48:29 +0000"
+      "has_planks": "2026-10-09 01:11:28 +0000"
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/chiseled_quartz_block": {
+  "create:recipes/building_blocks/spruce_window": {
     "criteria": {
-      "has_quartz_block": "2026-10-09 01:48:29 +0000"
+      "has_ingredient": "2026-10-09 01:11:28 +0000"
     },
     "done": true
   },
-  "minecraft:recipes/misc/purple_dye": {
+  "minecraft:recipes/redstone/spruce_button": {
     "criteria": {
-      "has_blue_dye": "2026-10-09 01:12:09 +0000"
+      "has_planks": "2026-10-09 01:11:28 +0000"
     },
     "done": true
   },
-  "create:recipes/building_blocks/polished_cut_scorchia_wall_from_stone_types_scorchia_stonecutting": {
+  "minecraft:recipes/redstone/spruce_pressure_plate": {
     "criteria": {
-      "has_stone_types_scorchia": "2026-10-09 01:41:50 +0000"
+      "has_planks": "2026-10-09 01:11:28 +0000"
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/quartz_bricks_from_quartz_block_stonecutting": {
+  "minecraft:recipes/decorations/spruce_sign": {
     "criteria": {
-      "has_quartz_block": "2026-10-09 01:48:29 +0000"
+      "has_planks": "2026-10-09 01:11:28 +0000"
     },
     "done": true
   },
-  "minecraft:nether/root": {
+  "minecraft:recipes/building_blocks/spruce_slab": {
     "criteria": {
-      "entered_nether": "2026-10-09 01:19:13 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/tools/flint_and_steel": {
-    "criteria": {
-      "has_obsidian": "2026-10-09 01:07:44 +0000"
-    },
-    "done": true
-  },
-  "create:recipes/building_blocks/scorchia_from_stone_types_scorchia_stonecutting": {
-    "criteria": {
-      "has_stone_types_scorchia": "2026-10-09 01:41:50 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/food/baked_potato_from_smoking": {
-    "criteria": {
-      "has_potato": "2026-10-09 01:05:22 +0000"
-    },
-    "done": true
-  },
-  "railways:recipes/misc/crafting/palettes/trapdoors/gray_locometal_trapdoor": {
-    "criteria": {
-      "has_item": "2026-10-09 01:14:49 +0000"
+      "has_planks": "2026-10-09 01:11:28 +0000"
     },
     "done": true
   },
   "minecraft:recipes/redstone/spruce_trapdoor": {
     "criteria": {
       "has_planks": "2026-10-09 01:11:28 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/soul_campfire": {
-    "criteria": {
-      "has_soul_sand": "2026-10-09 01:35:49 +0000"
-    },
-    "done": true
-  },
-  "railways:recipes/misc/crafting/palettes/trapdoors/tuff_locometal_trapdoor": {
-    "criteria": {
-      "has_item": "2026-10-09 01:14:49 +0000"
     },
     "done": true
   },
@@ -2499,15 +1729,315 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/spruce_stairs": {
+    "criteria": {
+      "has_planks": "2026-10-09 01:11:28 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/acacia_button": {
+    "criteria": {
+      "has_planks": "2026-10-09 01:11:36 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/acacia_stairs": {
+    "criteria": {
+      "has_planks": "2026-10-09 01:11:36 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/acacia_door": {
+    "criteria": {
+      "has_planks": "2026-10-09 01:11:36 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/building_blocks/acacia_window": {
+    "criteria": {
+      "has_ingredient": "2026-10-09 01:11:36 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/acacia_sign": {
+    "criteria": {
+      "has_planks": "2026-10-09 01:11:36 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/acacia_pressure_plate": {
+    "criteria": {
+      "has_planks": "2026-10-09 01:11:36 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/acacia_slab": {
+    "criteria": {
+      "has_planks": "2026-10-09 01:11:36 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/acacia_trapdoor": {
+    "criteria": {
+      "has_planks": "2026-10-09 01:11:36 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/acacia_fence_gate": {
+    "criteria": {
+      "has_planks": "2026-10-09 01:11:36 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/acacia_fence": {
     "criteria": {
       "has_planks": "2026-10-09 01:11:36 +0000"
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/polished_basalt_from_basalt_stonecutting": {
+  "minecraft:recipes/decorations/blue_stained_glass_pane_from_glass_pane": {
     "criteria": {
-      "has_basalt": "2026-10-09 01:28:11 +0000"
+      "has_blue_dye": "2026-10-09 01:12:09 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/magenta_dye_from_blue_red_pink": {
+    "criteria": {
+      "has_blue_dye": "2026-10-09 01:12:09 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dye_blue_wool": {
+    "criteria": {
+      "has_needed_dye": "2026-10-09 01:12:09 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/light_blue_dye_from_blue_white_dye": {
+    "criteria": {
+      "has_blue_dye": "2026-10-09 01:12:09 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dye_blue_carpet": {
+    "criteria": {
+      "has_needed_dye": "2026-10-09 01:12:09 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dye_blue_bed": {
+    "criteria": {
+      "has_needed_dye": "2026-10-09 01:12:09 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/magenta_dye_from_blue_red_white_dye": {
+    "criteria": {
+      "has_blue_dye": "2026-10-09 01:12:09 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/cyan_dye": {
+    "criteria": {
+      "has_blue_dye": "2026-10-09 01:12:09 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/blue_candle": {
+    "criteria": {
+      "has_blue_dye": "2026-10-09 01:12:09 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/purple_dye": {
+    "criteria": {
+      "has_blue_dye": "2026-10-09 01:12:09 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/smoker": {
+    "criteria": {
+      "has_furnace": "2026-10-09 01:13:42 +0000"
+    },
+    "done": true
+  },
+  "minecraft:story/iron_tools": {
+    "criteria": {
+      "iron_pickaxe": "2026-10-09 01:14:28 +0000"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/palettes/trapdoors/white_locometal_trapdoor": {
+    "criteria": {
+      "has_item": "2026-10-09 01:14:49 +0000"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/palettes/trapdoors/brown_locometal_trapdoor": {
+    "criteria": {
+      "has_item": "2026-10-09 01:14:49 +0000"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/palettes/trapdoors/lime_locometal_trapdoor": {
+    "criteria": {
+      "has_item": "2026-10-09 01:14:49 +0000"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/palettes/trapdoors/granite_locometal_trapdoor": {
+    "criteria": {
+      "has_item": "2026-10-09 01:14:49 +0000"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/palettes/trapdoors/diorite_locometal_trapdoor": {
+    "criteria": {
+      "has_item": "2026-10-09 01:14:49 +0000"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/palettes/trapdoors/magenta_locometal_trapdoor": {
+    "criteria": {
+      "has_item": "2026-10-09 01:14:49 +0000"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/palettes/trapdoors/turquoise_locometal_trapdoor": {
+    "criteria": {
+      "has_item": "2026-10-09 01:14:49 +0000"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/palettes/trapdoors/maroon_locometal_trapdoor": {
+    "criteria": {
+      "has_item": "2026-10-09 01:14:49 +0000"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/palettes/trapdoors/olive_green_locometal_trapdoor": {
+    "criteria": {
+      "has_item": "2026-10-09 01:14:49 +0000"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/palettes/trapdoors/light_blue_locometal_trapdoor": {
+    "criteria": {
+      "has_item": "2026-10-09 01:14:49 +0000"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/palettes/trapdoors/dripstone_locometal_trapdoor": {
+    "criteria": {
+      "has_item": "2026-10-09 01:14:49 +0000"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/palettes/trapdoors/red_locometal_trapdoor": {
+    "criteria": {
+      "has_item": "2026-10-09 01:14:49 +0000"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/palettes/trapdoors/limestone_locometal_trapdoor": {
+    "criteria": {
+      "has_item": "2026-10-09 01:14:49 +0000"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/palettes/trapdoors/vermilion_locometal_trapdoor": {
+    "criteria": {
+      "has_item": "2026-10-09 01:14:49 +0000"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/palettes/trapdoors/orange_locometal_trapdoor": {
+    "criteria": {
+      "has_item": "2026-10-09 01:14:49 +0000"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/palettes/trapdoors/pine_green_locometal_trapdoor": {
+    "criteria": {
+      "has_item": "2026-10-09 01:14:49 +0000"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/palettes/trapdoors/pink_locometal_trapdoor": {
+    "criteria": {
+      "has_item": "2026-10-09 01:14:49 +0000"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/palettes/trapdoors/locometal_trapdoor": {
+    "criteria": {
+      "has_item": "2026-10-09 01:14:49 +0000"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/palettes/trapdoors/light_gray_locometal_trapdoor": {
+    "criteria": {
+      "has_item": "2026-10-09 01:14:49 +0000"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/palettes/trapdoors/green_locometal_trapdoor": {
+    "criteria": {
+      "has_item": "2026-10-09 01:14:49 +0000"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/palettes/trapdoors/black_locometal_trapdoor": {
+    "criteria": {
+      "has_item": "2026-10-09 01:14:49 +0000"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/palettes/trapdoors/chartreuse_locometal_trapdoor": {
+    "criteria": {
+      "has_item": "2026-10-09 01:14:49 +0000"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/palettes/trapdoors/cyan_locometal_trapdoor": {
+    "criteria": {
+      "has_item": "2026-10-09 01:14:49 +0000"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/palettes/trapdoors/sea_green_locometal_trapdoor": {
+    "criteria": {
+      "has_item": "2026-10-09 01:14:49 +0000"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/palettes/trapdoors/ochrum_locometal_trapdoor": {
+    "criteria": {
+      "has_item": "2026-10-09 01:14:49 +0000"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/palettes/trapdoors/royal_blue_locometal_trapdoor": {
+    "criteria": {
+      "has_item": "2026-10-09 01:14:49 +0000"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/palettes/trapdoors/purple_locometal_trapdoor": {
+    "criteria": {
+      "has_item": "2026-10-09 01:14:49 +0000"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/palettes/trapdoors/gray_locometal_trapdoor": {
+    "criteria": {
+      "has_item": "2026-10-09 01:14:49 +0000"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/palettes/trapdoors/tuff_locometal_trapdoor": {
+    "criteria": {
+      "has_item": "2026-10-09 01:14:49 +0000"
     },
     "done": true
   },
@@ -2517,27 +2047,9 @@
     },
     "done": true
   },
-  "minecraft:recipes/tools/iron_axe": {
-    "criteria": {
-      "has_iron_ingot": "2026-10-09 01:07:54 +0000"
-    },
-    "done": true
-  },
   "railways:recipes/misc/crafting/palettes/trapdoors/scorchia_locometal_trapdoor": {
     "criteria": {
       "has_item": "2026-10-09 01:14:49 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/nether_brick_slab_from_nether_bricks_stonecutting": {
-    "criteria": {
-      "has_nether_bricks": "2026-10-09 01:37:21 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/iron_nugget_from_blasting": {
-    "criteria": {
-      "has_iron_chestplate": "2026-10-09 01:06:03 +0000"
     },
     "done": true
   },
@@ -2547,21 +2059,275 @@
     },
     "done": true
   },
+  "minecraft:nether/explore_nether": {
+    "criteria": {
+      "minecraft:crimson_forest": "2026-10-09 01:32:50 +0000",
+      "minecraft:nether_wastes": "2026-10-09 01:28:52 +0000",
+      "minecraft:basalt_deltas": "2026-10-09 01:19:13 +0000"
+    },
+    "done": false
+  },
+  "minecraft:story/enter_the_nether": {
+    "criteria": {
+      "entered_nether": "2026-10-09 01:19:13 +0000"
+    },
+    "done": true
+  },
+  "minecraft:nether/root": {
+    "criteria": {
+      "entered_nether": "2026-10-09 01:19:13 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/smooth_basalt": {
+    "criteria": {
+      "has_basalt": "2026-10-09 01:28:11 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_basalt": {
+    "criteria": {
+      "has_basalt": "2026-10-09 01:28:11 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_basalt_from_basalt_stonecutting": {
+    "criteria": {
+      "has_basalt": "2026-10-09 01:28:11 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/nether_brick": {
+    "criteria": {
+      "has_netherrack": "2026-10-09 01:29:04 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/diorite": {
+    "criteria": {
+      "has_quartz": "2026-10-09 01:29:09 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/granite": {
+    "criteria": {
+      "has_quartz": "2026-10-09 01:29:09 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/quartz_block": {
+    "criteria": {
+      "has_quartz": "2026-10-09 01:29:09 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/comparator": {
+    "criteria": {
+      "has_quartz": "2026-10-09 01:29:09 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/daylight_detector": {
+    "criteria": {
+      "has_quartz": "2026-10-09 01:29:09 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/observer": {
+    "criteria": {
+      "has_quartz": "2026-10-09 01:29:09 +0000"
+    },
+    "done": true
+  },
+  "minecraft:nether/find_fortress": {
+    "criteria": {
+      "fortress": "2026-10-09 01:32:12 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/golden_axe": {
+    "criteria": {
+      "has_gold_ingot": "2026-10-09 01:35:10 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/golden_pickaxe": {
+    "criteria": {
+      "has_gold_ingot": "2026-10-09 01:35:10 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/gold_nugget": {
+    "criteria": {
+      "has_gold_ingot": "2026-10-09 01:35:10 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/golden_shovel": {
+    "criteria": {
+      "has_gold_ingot": "2026-10-09 01:35:10 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/golden_apple": {
+    "criteria": {
+      "has_gold_ingot": "2026-10-09 01:35:10 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/golden_boots": {
+    "criteria": {
+      "has_gold_ingot": "2026-10-09 01:35:10 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/golden_chestplate": {
+    "criteria": {
+      "has_gold_ingot": "2026-10-09 01:35:10 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/light_weighted_pressure_plate": {
+    "criteria": {
+      "has_gold_ingot": "2026-10-09 01:35:10 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/golden_sword": {
+    "criteria": {
+      "has_gold_ingot": "2026-10-09 01:35:10 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/gold_block": {
+    "criteria": {
+      "has_gold_ingot": "2026-10-09 01:35:10 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/golden_helmet": {
+    "criteria": {
+      "has_gold_ingot": "2026-10-09 01:35:10 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/tools/golden_hoe": {
     "criteria": {
       "has_gold_ingot": "2026-10-09 01:35:10 +0000"
     },
     "done": true
   },
-  "minecraft:recipes/decorations/enchanting_table": {
+  "minecraft:recipes/combat/golden_leggings": {
     "criteria": {
-      "has_obsidian": "2026-10-09 01:07:44 +0000"
+      "has_gold_ingot": "2026-10-09 01:35:10 +0000"
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/spruce_stairs": {
+  "minecraft:recipes/misc/gold_nugget_from_blasting": {
     "criteria": {
-      "has_planks": "2026-10-09 01:11:28 +0000"
+      "has_golden_chestplate": "2026-10-09 01:35:35 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/gold_nugget_from_smelting": {
+    "criteria": {
+      "has_golden_chestplate": "2026-10-09 01:35:35 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/nether_wart_block": {
+    "criteria": {
+      "has_nether_wart": "2026-10-09 01:35:46 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/red_nether_bricks": {
+    "criteria": {
+      "has_nether_wart": "2026-10-09 01:35:46 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/soul_torch": {
+    "criteria": {
+      "has_soul_sand": "2026-10-09 01:35:49 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/misc/smelting/scoria": {
+    "criteria": {
+      "has_item": "2026-10-09 01:35:49 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/soul_campfire": {
+    "criteria": {
+      "has_soul_sand": "2026-10-09 01:35:49 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/diamond_sword": {
+    "criteria": {
+      "has_diamond": "2026-10-09 01:36:25 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/jukebox": {
+    "criteria": {
+      "has_diamond": "2026-10-09 01:36:25 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/diamond_chestplate": {
+    "criteria": {
+      "has_diamond": "2026-10-09 01:36:25 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/diamond_pickaxe": {
+    "criteria": {
+      "has_diamond": "2026-10-09 01:36:25 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/diamond_hoe": {
+    "criteria": {
+      "has_diamond": "2026-10-09 01:36:25 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/diamond_shovel": {
+    "criteria": {
+      "has_diamond": "2026-10-09 01:36:25 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/diamond_helmet": {
+    "criteria": {
+      "has_diamond": "2026-10-09 01:36:25 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/diamond_block": {
+    "criteria": {
+      "has_diamond": "2026-10-09 01:36:25 +0000"
+    },
+    "done": true
+  },
+  "minecraft:story/mine_diamond": {
+    "criteria": {
+      "diamond": "2026-10-09 01:36:25 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/diamond_leggings": {
+    "criteria": {
+      "has_diamond": "2026-10-09 01:36:25 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/diamond_boots": {
+    "criteria": {
+      "has_diamond": "2026-10-09 01:36:25 +0000"
     },
     "done": true
   },
@@ -2571,21 +2337,261 @@
     },
     "done": true
   },
-  "minecraft:recipes/redstone/iron_door": {
+  "minecraft:recipes/building_blocks/chiseled_nether_bricks_from_nether_bricks_stonecutting": {
     "criteria": {
-      "has_iron_ingot": "2026-10-09 01:07:54 +0000"
+      "has_nether_bricks": "2026-10-09 01:37:21 +0000"
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/snow_block": {
+  "minecraft:recipes/decorations/nether_brick_wall_from_nether_bricks_stonecutting": {
     "criteria": {
-      "has_snowball": "2026-10-09 00:56:23 +0000"
+      "has_nether_bricks": "2026-10-09 01:37:21 +0000"
     },
     "done": true
   },
-  "minecraft:recipes/combat/golden_leggings": {
+  "minecraft:recipes/decorations/nether_brick_wall": {
     "criteria": {
-      "has_gold_ingot": "2026-10-09 01:35:10 +0000"
+      "has_nether_bricks": "2026-10-09 01:37:21 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/nether_brick_stairs": {
+    "criteria": {
+      "has_nether_bricks": "2026-10-09 01:37:21 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/nether_brick_slab": {
+    "criteria": {
+      "has_nether_bricks": "2026-10-09 01:37:21 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/nether_brick_stairs_from_nether_bricks_stonecutting": {
+    "criteria": {
+      "has_nether_bricks": "2026-10-09 01:37:21 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/nether_brick_fence": {
+    "criteria": {
+      "has_nether_bricks": "2026-10-09 01:37:21 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cracked_nether_bricks": {
+    "criteria": {
+      "has_nether_bricks": "2026-10-09 01:37:21 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/nether_brick_slab_from_nether_bricks_stonecutting": {
+    "criteria": {
+      "has_nether_bricks": "2026-10-09 01:37:21 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/bone_meal": {
+    "criteria": {
+      "has_bone": "2026-10-09 01:40:55 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/building_blocks/cut_scorchia_brick_slab_from_stone_types_scorchia_stonecutting": {
+    "criteria": {
+      "has_stone_types_scorchia": "2026-10-09 01:41:50 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/building_blocks/cut_scorchia_stairs_from_stone_types_scorchia_stonecutting": {
+    "criteria": {
+      "has_stone_types_scorchia": "2026-10-09 01:41:50 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/building_blocks/cut_scorchia_from_stone_types_scorchia_stonecutting": {
+    "criteria": {
+      "has_stone_types_scorchia": "2026-10-09 01:41:50 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/building_blocks/cut_scorchia_wall_from_stone_types_scorchia_stonecutting": {
+    "criteria": {
+      "has_stone_types_scorchia": "2026-10-09 01:41:50 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/building_blocks/cut_scorchia_brick_wall_from_stone_types_scorchia_stonecutting": {
+    "criteria": {
+      "has_stone_types_scorchia": "2026-10-09 01:41:50 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/building_blocks/small_scorchia_brick_slab_from_stone_types_scorchia_stonecutting": {
+    "criteria": {
+      "has_stone_types_scorchia": "2026-10-09 01:41:50 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/building_blocks/cut_scorchia_brick_stairs_from_stone_types_scorchia_stonecutting": {
+    "criteria": {
+      "has_stone_types_scorchia": "2026-10-09 01:41:50 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/building_blocks/cut_scorchia_slab_from_stone_types_scorchia_stonecutting": {
+    "criteria": {
+      "has_stone_types_scorchia": "2026-10-09 01:41:50 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/building_blocks/polished_cut_scorchia_stairs_from_stone_types_scorchia_stonecutting": {
+    "criteria": {
+      "has_stone_types_scorchia": "2026-10-09 01:41:50 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/building_blocks/polished_cut_scorchia_from_stone_types_scorchia_stonecutting": {
+    "criteria": {
+      "has_stone_types_scorchia": "2026-10-09 01:41:50 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/building_blocks/layered_scorchia_from_stone_types_scorchia_stonecutting": {
+    "criteria": {
+      "has_stone_types_scorchia": "2026-10-09 01:41:50 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/building_blocks/small_scorchia_brick_wall_from_stone_types_scorchia_stonecutting": {
+    "criteria": {
+      "has_stone_types_scorchia": "2026-10-09 01:41:50 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/building_blocks/scorchia_pillar_from_stone_types_scorchia_stonecutting": {
+    "criteria": {
+      "has_stone_types_scorchia": "2026-10-09 01:41:50 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/building_blocks/polished_cut_scorchia_slab_from_stone_types_scorchia_stonecutting": {
+    "criteria": {
+      "has_stone_types_scorchia": "2026-10-09 01:41:50 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/building_blocks/small_scorchia_bricks_from_stone_types_scorchia_stonecutting": {
+    "criteria": {
+      "has_stone_types_scorchia": "2026-10-09 01:41:50 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/building_blocks/cut_scorchia_bricks_from_stone_types_scorchia_stonecutting": {
+    "criteria": {
+      "has_stone_types_scorchia": "2026-10-09 01:41:50 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/building_blocks/small_scorchia_brick_stairs_from_stone_types_scorchia_stonecutting": {
+    "criteria": {
+      "has_stone_types_scorchia": "2026-10-09 01:41:50 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/building_blocks/polished_cut_scorchia_wall_from_stone_types_scorchia_stonecutting": {
+    "criteria": {
+      "has_stone_types_scorchia": "2026-10-09 01:41:50 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/building_blocks/scorchia_from_stone_types_scorchia_stonecutting": {
+    "criteria": {
+      "has_stone_types_scorchia": "2026-10-09 01:41:50 +0000"
+    },
+    "done": true
+  },
+  "pgctoilet:recipes/toilet_bowl": {
+    "criteria": {
+      "has_quartz": "2026-10-09 01:48:29 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/quartz_slab": {
+    "criteria": {
+      "has_quartz_block": "2026-10-09 01:48:29 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/quartz_bricks": {
+    "criteria": {
+      "has_quartz_block": "2026-10-09 01:48:29 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/quartz_stairs": {
+    "criteria": {
+      "has_quartz_block": "2026-10-09 01:48:29 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/chiseled_quartz_block_from_quartz_block_stonecutting": {
+    "criteria": {
+      "has_quartz_block": "2026-10-09 01:48:29 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/quartz_slab_from_stonecutting": {
+    "criteria": {
+      "has_quartz_block": "2026-10-09 01:48:29 +0000"
+    },
+    "done": true
+  },
+  "pgctoilet:recipes/urinal": {
+    "criteria": {
+      "has_quartz": "2026-10-09 01:48:29 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/quartz_pillar_from_quartz_block_stonecutting": {
+    "criteria": {
+      "has_quartz_block": "2026-10-09 01:48:29 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/quartz_pillar": {
+    "criteria": {
+      "has_quartz_block": "2026-10-09 01:48:29 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/quartz_stairs_from_quartz_block_stonecutting": {
+    "criteria": {
+      "has_quartz_block": "2026-10-09 01:48:29 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/smooth_quartz": {
+    "criteria": {
+      "has_quartz_block": "2026-10-09 01:48:29 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/chiseled_quartz_block": {
+    "criteria": {
+      "has_quartz_block": "2026-10-09 01:48:29 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/quartz_bricks_from_quartz_block_stonecutting": {
+    "criteria": {
+      "has_quartz_block": "2026-10-09 01:48:29 +0000"
+    },
+    "done": true
+  },
+  "minecraft:husbandry/plant_seed": {
+    "criteria": {
+      "wheat": "2026-10-11 22:52:04 +0000"
     },
     "done": true
   },
