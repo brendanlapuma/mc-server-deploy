@@ -13,18 +13,22 @@
       "minecraft:cherry_grove": "2026-10-10 20:31:56 +0000",
       "minecraft:birch_forest": "2026-10-08 04:26:42 +0000",
       "minecraft:bamboo_jungle": "2026-10-08 03:05:50 +0000",
+      "minecraft:wooded_badlands": "2026-10-18 03:15:56 +0000",
       "minecraft:beach": "2026-10-08 03:03:56 +0000",
       "minecraft:dark_forest": "2026-10-08 04:42:42 +0000",
+      "minecraft:sparse_jungle": "2026-10-18 03:10:02 +0000",
       "minecraft:lukewarm_ocean": "2026-10-08 03:04:13 +0000",
       "minecraft:river": "2026-10-08 02:42:43 +0000",
       "minecraft:stony_shore": "2026-10-08 02:40:47 +0000",
       "minecraft:grove": "2026-10-08 05:25:23 +0000",
       "minecraft:forest": "2026-10-08 02:43:52 +0000",
       "minecraft:lush_caves": "2026-10-10 03:33:52 +0000",
+      "minecraft:desert": "2026-10-18 19:14:45 +0000",
       "minecraft:jungle": "2026-10-08 03:03:40 +0000",
       "minecraft:ocean": "2026-10-08 04:24:49 +0000",
       "minecraft:old_growth_spruce_taiga": "2026-10-10 03:21:39 +0000",
       "minecraft:windswept_savanna": "2026-10-08 04:31:12 +0000",
+      "minecraft:warm_ocean": "2026-10-18 03:12:18 +0000",
       "minecraft:deep_lukewarm_ocean": "2026-10-08 03:04:23 +0000",
       "minecraft:old_growth_birch_forest": "2026-10-08 04:27:05 +0000",
       "minecraft:deep_dark": "2026-10-10 03:54:20 +0000",
@@ -251,6 +255,7 @@
       "minecraft:spider": "2026-10-08 02:45:20 +0000",
       "minecraft:creeper": "2026-10-08 02:55:42 +0000",
       "minecraft:wither_skeleton": "2026-10-09 01:33:36 +0000",
+      "minecraft:cave_spider": "2026-10-17 22:51:07 +0000",
       "minecraft:enderman": "2026-10-10 20:32:24 +0000",
       "minecraft:zombie": "2026-10-08 02:50:44 +0000",
       "minecraft:drowned": "2026-10-12 00:10:43 +0000",
@@ -405,6 +410,7 @@
       "apple": "2026-10-08 04:58:07 +0000",
       "spider_eye": "2026-10-08 02:51:48 +0000",
       "bread": "2026-10-08 05:01:28 +0000",
+      "suspicious_stew": "2026-10-18 19:28:30 +0000",
       "cooked_chicken": "2026-10-08 04:57:06 +0000",
       "carrot": "2026-10-12 01:01:43 +0000"
     },
@@ -5792,6 +5798,42 @@
   "minecraft:recipes/misc/blue_dye": {
     "criteria": {
       "has_lapis_lazuli": "2026-10-17 03:00:22 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/lapis_lazuli": {
+    "criteria": {
+      "has_lapis_block": "2026-10-17 23:06:48 +0000"
+    },
+    "done": true
+  },
+  "minecraft:story/enchant_item": {
+    "criteria": {
+      "enchanted_item": "2026-10-18 02:41:43 +0000"
+    },
+    "done": true
+  },
+  "minecraft:story/shiny_gear": {
+    "criteria": {
+      "diamond_chestplate": "2026-10-18 02:42:08 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/lime_dye_from_smelting": {
+    "criteria": {
+      "has_sea_pickle": "2026-10-18 03:12:33 +0000"
+    },
+    "done": true
+  },
+  "minecraft:adventure/avoid_vibration": {
+    "criteria": {
+      "avoid_vibration": "2026-10-18 19:38:54 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/mushroom_stew": {
+    "criteria": {
+      "has_bowl": "2026-10-18 19:28:30 +0000"
     },
     "done": true
   },
